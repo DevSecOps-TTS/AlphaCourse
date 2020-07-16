@@ -1,6 +1,6 @@
 # Alpha Course - TTS DevSecOps
 
-This repository is a monorepo for all practice projects.
+This recrpository is a monorepo for all practice projects.
 
 ## Contact Information
 
