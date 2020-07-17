@@ -1,6 +1,6 @@
 # Alpha Course - TTS DevSecOps
 
-This repository is a monorepo for all practice projects.
+This recrpository is a monorepo for all practice projects.
 
 ## Contact Information
 
@@ -8,3 +8,4 @@ This repository is a monorepo for all practice projects.
 - Brian Moran - bmoran@enertia-inc.com
 - Rose Grace - rosegrace6@yahoo.com
 - Chris Bush - chris_r_bush@yahoo
+- Vincent Cradler - vincentcradler@gmail.com
