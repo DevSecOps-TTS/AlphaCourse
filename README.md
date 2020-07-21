@@ -9,4 +9,5 @@ This recrpository is a monorepo for all practice projects.
 - Rose Grace - rosegrace6@yahoo.com
 - Chris Bush - chris_r_bush@yahoo.com
 - Vincent Cradler - vincentcradler@gmail.com
+- David Akinbode - davidateaglet@outlook.com
 - Jason Beaver - jasonbeaverw99@gmail.com
