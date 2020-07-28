@@ -7,6 +7,12 @@ on:
     branches: [ master ]
 
 jobs:
+     new_test_job:
+      steps:
+        - name: first step
+          uses: actions/AlphaCourse/individual-work/jbeaver/contact
+        - name: second step
+          uses: actions/AlphaCourse/individual-work/jbeaver/dockerfile
 
   build:
 
@@ -16,3 +22,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag work-flow-image:$(date +%s)
+      with:
+        node-version: ${{ matrix.node-version }}
+        - run: npm ci
+        - run: npm run build --if-present
+        - run: npm test
