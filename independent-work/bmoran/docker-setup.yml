@@ -1,0 +1,9 @@
+name: Docker Set-up
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+  
+ run: docker build . --file Dockerfile 
