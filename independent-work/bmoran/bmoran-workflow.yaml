@@ -1,0 +1,28 @@
+name: Build and run Dockerfile for bmoran
+
+on:
+    pull_request:
+        branches:
+          - master
+        path:
+          - 'individual-work/bmoran.**
+          - '.github/workflows/bmoran-workflow.yaml'
+
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        
+        steps:
+        
+          - name: Fetch repository and checkout this branches
+            uses: actions/checkout@v2
+        
+          - name: Build and run docker image
+            working-directory: individual-work/bmoran
+            run: docker build - t test . 
+
+          - name: Run Docker Image  
+            working-directory: individual-work/bmoran
+            run: docker run test
+            
