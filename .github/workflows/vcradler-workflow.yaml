@@ -1,0 +1,31 @@
+name: build and run Dockerfile for vcralder
+on:
+    pull_request:
+        branches:
+            - master
+
+        paths:
+            - '/individual-work/vcradler/**'
+            - '.github/workflows/vcradler-workflow.yaml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Fetch my code repositoy
+        uses: actions/checkout@v2
+
+      - name: Please fail, code!
+        run: exit
+
+      - name: Building Docker image
+        working-directory: ./individual-work/vcradler/
+        run: |
+            docker build -t test .
+      - name: Run Docker image
+        working-directory: ./individual-work/vcradler/
+        run: docker run test
+
+
