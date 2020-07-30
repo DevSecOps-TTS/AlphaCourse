@@ -5,7 +5,7 @@ on:
     branches: 
       - master
      paths:
-     - 'individual-work/rgrace/**'
+     - './individual-work/rgrace/**'
      - '.github/workflows/rgrace-workflow.yaml'
      
 jobs:
