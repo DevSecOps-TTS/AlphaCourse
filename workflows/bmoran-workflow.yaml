@@ -5,7 +5,7 @@ on:
         branches:
           - master
         path:
-          - 'individual-work/bmoran.**'
+          - 'individual-work/bmoran/**'
           - '.github/workflows/bmoran-workflow.yaml'
 
 jobs:
