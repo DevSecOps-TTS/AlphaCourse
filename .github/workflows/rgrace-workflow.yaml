@@ -2,8 +2,8 @@ Name: Build and run Dockerfile for rgrace
 
 on:
   pull_request:
-    branches: [master]
-  
+    branches: 
+      - master
      paths:
      - 'individual-work/rgrace/**'
      - '.github/workflows/rgrace-workflow.yaml'
@@ -19,11 +19,11 @@ jobs:
         uses: actions/checkout@v2
      
       - name: Build and run docker image
-        working-directory: ./individual-work/rgrace5/
+        working-directory: ./individual-work/rgrace/
         run: docker build -t test .
 
         name: Run docker image
-        working-directory: ./individual-work/rgrace5/
+        working-directory: ./individual-work/rgrace/
         run: docker run test
 
         
