@@ -1,3 +1,11 @@
-FROM alpine:latest
+FROM node:lts-slim
 
-RUN echo "This is a placeholder dockerfile that doesn't do anything aside from output this sentence."
+WORKDIR /code
+
+COPY eknight-react-demo/package.json /code
+
+RUN npm install
+
+COPY my-app /code
+
+CMD [ "yarn", "start" ]
