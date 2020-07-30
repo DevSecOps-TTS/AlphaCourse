@@ -20,7 +20,7 @@ jobs:
         
           - name: Build and run docker image
             working-directory: individual-work/bmoran
-            run: docker build - t test . 
+            run: docker build -t test . 
 
           - name: Run Docker Image  
             working-directory: individual-work/bmoran
