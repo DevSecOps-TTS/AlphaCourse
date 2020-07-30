@@ -6,11 +6,11 @@ on:
   
      paths:
      - 'individual-work/rgrace/**'
-     -'.github/workflows/rgrace-workflow.yaml'
+     - '.github/workflows/rgrace-workflow.yaml'
      
 jobs:
   build:
-    name: Build
+    name: Buildcode
     runs-on: ubuntu-latest
 
     steps:
