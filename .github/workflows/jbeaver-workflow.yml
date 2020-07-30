@@ -1,0 +1,32 @@
+name: Docker Image CI
+
+on:
+  pull_request:
+    branches: 
+      - master
+    paths:
+      - '/individual-work/jbeaver/**'
+      - '.github/workflows/jbeaver-workflow.yaml'
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Fetch the code repo
+        uses: actions/checkout@v2
+
+      - name: Force Fail
+        run: exit
+
+      - name: Building The Docker image
+        working-directory: ./individual-work/jbeaver/
+        
+        run: |
+            docker build -t test
+            
+      - name: Running The Docker image
+        working-directory: ./individual-work/jbeaver/
+        
+        run: 
+          docker run test
