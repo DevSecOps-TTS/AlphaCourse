@@ -1,3 +1,11 @@
-FROM alpine:latest
-    
-RUN echo "This is a placeholder dockerfile that doesn't do anything aside from output this sentence."
+FROM node:lts-slim
+
+WORKDIR /code
+
+COPY bmoran-react-demo/package.json /code 
+
+RUN npm install
+
+COPY bmoran-react-demo /code
+
+CMD [ "yarn", "start" ]
