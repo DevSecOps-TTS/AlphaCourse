@@ -1,0 +1,38 @@
+name: Build and run Dockerfile for cbush
+
+on:
+  push:
+    branches: 
+      - master
+    paths: 
+        - 'individual-work/cbush/**'
+        - '.github/workflows/cbush-workflow.yml'
+
+  pull_request:
+    branches: 
+      - master
+    paths: 
+        - 'individual-work/cbush/**'
+        - '.github/workflows/cbush-workflow.yml'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:       
+      - name: Fetch my repo and checkout branches
+        uses: actions/checkout@v2
+
+      - name: Please fail, code!
+        run: exit
+
+      - name: Building Docker image
+        working-directory: ./individual-work/cbush/
+        run: |
+          # docker build . --file Dockerfile --tag cbush:$(date +%s)
+          docker build . --file Dockerfile --tag cbush
+
+      - name: Run Docker image
+        working-directory: ./individual-work/cbush/
+        run: docker run cbush
