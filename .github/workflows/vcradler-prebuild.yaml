@@ -6,7 +6,7 @@ on:
 
         paths:
             - '/individual-work/vcradler/**'
-            - '.github/workflows/vcradler-premerge.yml'
+            - '.github/workflows/vcradler-premerge.yaml'
 
 jobs:
   build:
