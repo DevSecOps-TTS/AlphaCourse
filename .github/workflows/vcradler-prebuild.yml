@@ -1,12 +1,12 @@
-name: build and run Dockerfile for vcralder
+name: This the the Prebuild file 
 on:
     pull_request:
         branches:
             - master
 
         paths:
-            - '/individual-work/vcradler/**'
-            - '.github/workflows/vcradler-workflow.yaml'
+            - '/individual-work/vcradler/Dockerfile'
+            - '.github/workflows/vcradler-premerge.yml'
 
 jobs:
   build:
@@ -23,9 +23,7 @@ jobs:
       - name: Building Docker image
         working-directory: ./individual-work/vcradler/
         run: |
-            docker build -t test .
+            docker build . --file Dockerfile -t vcradler
       - name: Run Docker image
         working-directory: ./individual-work/vcradler/
-        run: docker run test
-
-
+        run: docker run -it -p 3000:3000 vcradler
