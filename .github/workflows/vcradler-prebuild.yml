@@ -5,7 +5,7 @@ on:
             - master
 
         paths:
-            - '/individual-work/vcradler/Dockerfile'
+            - '/individual-work/vcradler/**'
             - '.github/workflows/vcradler-premerge.yml'
 
 jobs:
