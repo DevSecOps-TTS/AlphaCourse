@@ -1,7 +1,7 @@
 name: Build and run Dockerfile for bmoran
 
 on:
-    pull_request:
+    push:
         branches:
           - master
         path:
@@ -18,11 +18,11 @@ jobs:
           - name: Fetch repository and checkout this branches
             uses: actions/checkout@v2
         
+          - name: Login to Docker Hub
+            uses: echo ${{ secrets.EKNIGHT_DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.EKNIGHT_DOCKERHUB_USERNAME }} --password-stdin
+
+        
           - name: Build and run docker image
             working-directory: individual-work/bmoran
-            run: docker build -t test . 
-
-          - name: Run Docker Image  
-            working-directory: individual-work/bmoran
-            run: docker run test
+            run: docker build -t react-demo-$(date +%s) .      
             
