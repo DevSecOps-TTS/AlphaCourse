@@ -1,3 +1,11 @@
-FROM alpine:latest
+FROM node:lts-slim
 
-RUN echo "This is a placeholder dockerfile that doesnt do anything aside from  "
+WORKDIR /code
+
+COPY rgrace-react-demo/package.json /code
+
+RUN npm install
+
+COPY rgrace-react-demo /code
+
+CMD ["yarn", "start"]
