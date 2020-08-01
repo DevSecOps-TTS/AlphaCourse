@@ -23,7 +23,7 @@ jobs:
       - name: Building Docker image
         working-directory: ./individual-work/vcradler/
         run: |
-            docker build -t vcradler --file Dockerfile
+            docker build -t vcradler .
       - name: Run Docker image
         working-directory: ./individual-work/vcradler/
         run: docker run -it -p 3000:3000 vcradler
