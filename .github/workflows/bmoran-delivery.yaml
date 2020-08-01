@@ -5,6 +5,7 @@ on:
         branches:
           - master
         path:
+          - 'group-work/AlphaTeamTwo/**'
           - 'individual-work/bmoran/**'
           - '.github/workflows/bmoran-workflow.yaml'
 
