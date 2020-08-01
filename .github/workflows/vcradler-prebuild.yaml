@@ -26,4 +26,4 @@ jobs:
             docker build -t vcradler .
       - name: Run Docker image
         working-directory: ./individual-work/vcradler/
-        run: docker run -it -p 3000:3000 vcradler
+        run: docker run -p 3000:3000 vcradler
