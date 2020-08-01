@@ -8,7 +8,7 @@ on:
           - 'group-work/AlphaTeamTwo/**'
           - 'individual-work/bmoran/**'
           - '.github/workflows/bmoran-workflow.yaml'
-
+    
 jobs:
     build:
         name: Build
