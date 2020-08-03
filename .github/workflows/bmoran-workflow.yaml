@@ -4,7 +4,7 @@ on:
     pull_request:
         branches:
           - master
-        path:
+        paths:
           - 'individual-work/bmoran/**'
           - '.github/workflows/bmoran-workflow.yaml'
 
