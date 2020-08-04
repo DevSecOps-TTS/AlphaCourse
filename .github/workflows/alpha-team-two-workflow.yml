@@ -1,0 +1,30 @@
+name: Build and run Dockerfile for AlphaTeamTwo
+
+on:
+  pull_request:
+    branches: 
+      - master
+    paths: 
+        - 'group-work/AlphaTeamTwo/**'
+        - '.github/workflows/alpha-team-two-workflow.yml'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:       
+      - name: Fetch my repo and checkout branches
+        uses: actions/checkout@v2
+
+      - name: Please fail, code!
+        run: exit
+
+      - name: Building Docker image
+        working-directory: ./group-work/AlphaTeamTwo/
+        run: |          
+          docker build -t alpha-team-two .
+
+      - name: Run Docker image
+        working-directory: ./group-work/AlphaTeamTwo/
+        run: docker run alpha-team-two
