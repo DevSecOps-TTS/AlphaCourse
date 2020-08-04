@@ -1,0 +1,13 @@
+name: built to fail
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Fetch my code repositoy
+        uses: actions/checkout@v2
+        run: exit 1
+
