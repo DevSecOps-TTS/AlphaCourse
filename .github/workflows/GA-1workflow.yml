@@ -1,0 +1,37 @@
+name: Build Alpha Team One
+
+on:
+  push:
+    branches: 
+      - master
+    paths: 
+        - 'group-work/AlphaTeamOne'
+        - '.github/workflows/GA-1workflow.yml'
+
+  pull_request:
+    branches: 
+      - master
+    paths: 
+        - 'group-work/AlphaTeamOne/**'
+        - '.github/workflows/GA-1workflow.yml'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:       
+      - name: Fetch my repo and checkout branches
+        uses: actions/checkout@v2
+
+      - name: Please fail, code!
+        run: exit
+
+      - name: Building Docker image
+        working-directory: ./group-work/AlphaTeamOne/
+        run: |
+          docker build . --file Dockerfile --tag alphateamone
+
+      - name: Run Docker image
+        working-directory: ./group-work/AlphaTeamOne/
+        run: docker run -i -p 3000:3000 alphateamone
