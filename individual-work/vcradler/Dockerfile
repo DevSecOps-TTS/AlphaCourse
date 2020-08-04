@@ -6,6 +6,6 @@ COPY /vcradler-demo/package.json /code
 
 RUN npm install
 
-COPY  /vcradler-react-demo /code
+COPY  /vcradler-demo /code
 
 CMD ["yarn", "start"]
