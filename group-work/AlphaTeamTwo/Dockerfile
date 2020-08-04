@@ -1,11 +1,13 @@
 FROM node:lts-slim
 
-WORKDIR /code
+RUN mkdir -p /src/app
 
-COPY /team2reactapp/package.json /code
+WORKDIR /src/app
+
+COPY package.json /src/app/package.json
 
 RUN npm install
 
-COPY /team2reactapp/ /code
+COPY . /src/app
 
 CMD [ "yarn", "start"]
