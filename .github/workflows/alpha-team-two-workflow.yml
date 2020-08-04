@@ -1,13 +1,6 @@
 name: Build and run Dockerfile for AlphaTeamTwo
 
 on:
-  push:
-    branches: 
-      - master
-    paths: 
-        - 'group-work/AlphaTeamTwo/**'
-        - '.github/workflows/alpha-team-two-workflow.yml'
-
   pull_request:
     branches: 
       - master
