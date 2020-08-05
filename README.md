@@ -53,7 +53,7 @@ Acceptance Criteria:
 
 This may be repeated by any number of students. This is worth a minimum of 15 and maximum of 30 bonus reputation points.
 
-Provide link and author's name below upon completion:
+#### Completed by:
 
 | Author | Blog Location / URL |
 |--------|---------------------|
@@ -67,7 +67,9 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be repeated by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+
+#### Completed by:
 
 | Author | Blog Location / URL |
 |--------|---------------------|
@@ -81,7 +83,9 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be repeated by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+
+#### Completed by:
 
 | Author | Blog Location / URL |
 |--------|---------------------|
@@ -95,7 +99,9 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be repeated by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+
+#### Completed by:
 
 | Author | Blog Location / URL |
 |--------|---------------------|
