@@ -9,7 +9,12 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p> Welcome to Alpha Team One React App
         </p>
-        
+        <p> Rose Grace
+        </p>
+        <p> Vincent Cradler
+        </p>
+        <p> Jason
+        </p>
       </header>
     </div>
   );
