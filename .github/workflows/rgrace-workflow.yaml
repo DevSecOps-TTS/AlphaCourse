@@ -1,10 +1,10 @@
 Name: Build and run Dockerfile for rgrace
-
 on:
   pull_request:
-    branches: 
+    branches:
       - master
-     paths:
+    
+    paths:
      - './individual-work/rgrace/**'
      - '.github/workflows/rgrace-workflow.yaml'
      
