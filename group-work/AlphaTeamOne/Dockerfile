@@ -1,11 +1,20 @@
-FROM node:lts-slim 
+FROM node:alpine as builder 
 
-WORKDIR /code 
+WORKDIR /app 
 
-COPY /alphagroup1/package.json /code
+COPY alphagroup1/ .
 
 RUN npm install
 
-COPY /alphagroup1/ /code
+RUN npm run build
 
-CMD ["yarn", "start"]
+FROM nginx:alpine
+
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+COPY --from=builder /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ] 
