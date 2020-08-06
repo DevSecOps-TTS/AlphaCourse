@@ -2,7 +2,7 @@ FROM node:alpine as builder
 
 WORKDIR /app 
 
-COPY . ./
+COPY alphagroup1/ .
 
 RUN npm install
 
