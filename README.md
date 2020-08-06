@@ -15,7 +15,11 @@ This repository is a monorepo for all practice projects.
 
 ## Bonus Work Opportunities
 
+<<<<<<< HEAD
 Word count contributes to reputation score. Work will be graded once it has been "turned in" by linking to it below. 
+=======
+Work will be graded once it has been "turned in" by creating a PR adding a link to it in the appropriate table below. Acceptance criteria must be met for bonus work to be approved.
+>>>>>>> d9d8fe780f90d747c0bc5c33f08b3675ab35089c
 
 Use markdown links to provide the location/url section in the tables found at the bottom of each section. 
 
