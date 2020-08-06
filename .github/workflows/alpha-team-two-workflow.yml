@@ -27,4 +27,4 @@ jobs:
 
       - name: Run Docker image
         working-directory: ./group-work/AlphaTeamTwo/
-        run: docker run alpha-team-two
+        #run: docker run alpha-team-two
