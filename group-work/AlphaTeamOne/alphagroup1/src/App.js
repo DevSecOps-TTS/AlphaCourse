@@ -7,7 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p> Welcome to Alpha Team One React App
+        <p> Rose Grace
+        </p>
+        <p> Jason Beaver
+        </p>
+        <p> Vincent Cradler
         </p>
         
       </header>
