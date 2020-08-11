@@ -1,3 +1,11 @@
-FROM alpine:latest
+FROM node:alpine as builder
+WORKDIR /app
+COPY . ./
+RUN npm install
+RUN npm run build
 
-RUN echo "This is a placeholder dockerfile that doesn't do anything aside from output this sentence."
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
