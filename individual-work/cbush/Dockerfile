@@ -1,3 +1,11 @@
-FROM alpine:latest
+FROM node:lts-slim
 
-RUN echo "Placeholder: You will be consumed by a carnivorous cloud and a fish will eat your home"
+WORKDIR /code
+
+COPY cbush-react-demo/package.json /code
+
+RUN npm install
+
+COPY cbush-react-demo /code
+
+CMD [ "yarn", "start"]
