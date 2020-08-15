@@ -1,4 +1,4 @@
-name: build and run Dockerfile for vcralder
+name: build and run Dockerfile for vcradler
 on:
     pull_request:
         branches:
@@ -6,7 +6,7 @@ on:
 
         paths:
             - '/individual-work/vcradler/**'
-            - '.github/workflows/vcradler-workflow.yaml'
+            - '.github/workflows/vcradler-prebuild.yml'
 
 jobs:
   build:
@@ -23,9 +23,8 @@ jobs:
       - name: Building Docker image
         working-directory: ./individual-work/vcradler/
         run: |
-            docker build -t test .
+            docker build -t vcradler .
+
       - name: Run Docker image
         working-directory: ./individual-work/vcradler/
-        run: docker run test
-
-
+        run: docker run -i -p 3000:3000 vcradler
