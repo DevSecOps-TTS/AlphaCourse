@@ -32,6 +32,3 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag alphateamone
 
-      - name: Run Docker image
-        working-directory: ./group-work/AlphaTeamOne/
-        run: docker run -i -p 3000:3000 alphateamone

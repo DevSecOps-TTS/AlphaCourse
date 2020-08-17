@@ -43,9 +43,12 @@ Acceptance Criteria:
 
 This may be repeated by any number of students. This is worth a minimum of 25 and maximum of 50 bonus reputation points.
 
-| Author | Location / URL      |
-|--------|---------------------|
-|        |                     |
+
+| Author | Location / URL                                                                        |
+|--------|---------------------------------------------------------------------------------------|
+|vcralder|https://medium.com/@vincentcradler/what-i-learned-from-the-phoenix-project-80e41727eb5a
+|--------|---------------------------------------------------------------------------------------|
+
 
 
 ### Blog Article: My Student Experience
@@ -75,9 +78,10 @@ This may be completed by **one student**. This is worth a minimum of 20 and maxi
 
 #### Completed by:
 
-| Author | Blog Location / URL |
-|--------|---------------------|
-|        |                     |
+| Author | Blog Location / URL                                        |
+|--------|------------------------------------------------------------|
+|vcradler| https://medium.com/@vincentcradler/learning-git-695adad19a4|
+
 
 
 ### Blog Article: My Advice for Learning Docker

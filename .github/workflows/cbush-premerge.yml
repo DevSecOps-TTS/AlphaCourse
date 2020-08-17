@@ -1,0 +1,30 @@
+name: Premerge File for cbush
+
+on:
+  pull_request:
+    branches: 
+      - master
+    paths: 
+        - 'individual-work/cbush/**'
+        - '.github/workflows/cbush-premerge.yml'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:       
+      - name: Fetch my repo and checkout branches
+        uses: actions/checkout@v2
+
+      - name: Please fail, code!
+        run: exit
+
+      - name: Building Docker image
+        working-directory: ./individual-work/cbush/
+        run: |
+          docker build -t cbush .
+
+      - name: Run Docker image
+        working-directory: ./individual-work/cbush/
+        run: docker run -p 3000:3000 cbush
