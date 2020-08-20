@@ -38,6 +38,6 @@ echo $_GET["first_name"] . " ". $_GET["last_name"] . " is a " . $decoded_json->g
 $confidence = $decoded_json->confidence * 100;
 
 echo "This is with a " . number_format($confidence, 0) . "% confidence level.<br>";
-curl_close($ch);
+curl_close($ch); 
 	
 ?>
