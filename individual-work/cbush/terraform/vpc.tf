@@ -31,7 +31,7 @@ resource "google_compute_subnetwork" "subnet" {
 
 output "region" {
     value       = var.region
-    description = "regionx"
+    description = "region"
 }
 
 output "project_id" {
