@@ -1,4 +1,4 @@
-Name: Build and run Dockerfile for rgrace
+name: Build and run Dockerfile for rgrace
 
 on:
   pull_request:
