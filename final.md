@@ -54,6 +54,8 @@ Total 100 points
 -	SSL
 -	Ports
 -	Log/Monitor/Alert
+- 	YAML
+- 	JSON
 
 ### Information Security (20 points)
 
