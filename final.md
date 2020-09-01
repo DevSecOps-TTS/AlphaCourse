@@ -50,6 +50,7 @@ Total 100 points
 
 -	HTTP
 -	HTTPS
+- 	HTTP Methods
 -	SSH
 -	SSL
 -	Ports
