@@ -68,22 +68,22 @@ Total 100 points
 -	MFA
 -	Data access controls and policies
 -	Types of Loss:
-  - Productivity
-  - Response
-  - Replacement
-  - Fines & Judgments
-  - Competitive Advantage
-  - Reputation
+	- Productivity
+	- Response
+	- Replacement
+	- Fines & Judgments
+	- Competitive Advantage
+	- Reputation
 -	Attack Vectors
-  - Hardware
-  - Software
-  - Communications
+	- Hardware
+	- Software
+	- Communications
 -	Threat Activities
-  - Access
-  - Misuse
-  - Disclose
-  - Modify
-  - Deny Access
+	- Access
+	- Misuse
+	- Disclose
+	- Modify
+	- Deny Access
 -	Zero Trust Model
 -	Role Based Access Controls
 -	IAM
@@ -97,16 +97,16 @@ Total 100 points
 	- API server
 	- Cloud controller manager
 	- Controller manager
-  - Etcd
-  - Kublet
-  - Kube-proxy
-  - Scheduler
-  - Control plane
-  - Node
-  - Pod
-  - Service
-  - Deployment
-  - Ingress Controller
+  	- Etcd
+  	- Kublet
+  	- Kube-proxy
+  	- Scheduler
+  	- Control plane
+  	- Node
+  	- Pod
+  	- Service
+  	- Deployment
+  	- Ingress Controller
 -	AWS
 -	Google Cloud Platform
 -	Microsoft Azure
