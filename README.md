@@ -70,7 +70,7 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This is worth a minimum of 20 and maximum of 40 bonus reputation points.
 
 #### Completed by:
 
@@ -87,7 +87,7 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This is worth a minimum of 20 and maximum of 40 bonus reputation points.
 
 #### Completed by:
 
@@ -103,7 +103,23 @@ Acceptance Criteria:
 - Minimum length: 300 words
 - Must follow the prompt "My Advice for Learning Git" (though it may have any title)
 
-This may be completed by **one student**. This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+This is worth a minimum of 20 and maximum of 40 bonus reputation points.
+
+#### Completed by:
+
+| Author | Blog Location / URL |
+|--------|---------------------|
+|        |                     |
+
+
+### Blog Article: My Advice for Learning Kubernetes
+
+Acceptance Criteria:
+- Maximum length: 500 words
+- Minimum length: 300 words
+- Must follow the prompt "My Advice for Learning Kubernetes" (though it may have any title)
+
+This is worth a minimum of 20 and maximum of 40 bonus reputation points.
 
 #### Completed by:
 
