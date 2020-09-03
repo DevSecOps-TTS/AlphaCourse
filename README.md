@@ -43,6 +43,7 @@ This may be repeated by any number of students. This is worth a minimum of 25 an
 | Author | Location / URL                                                                        |
 |--------|---------------------------------------------------------------------------------------|
 |vcralder|https://medium.com/@vincentcradler/what-i-learned-from-the-phoenix-project-80e41727eb5a
+|cbush   | privately submitted                                                                   |
 |--------|---------------------------------------------------------------------------------------|
 
 
